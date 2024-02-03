@@ -113,6 +113,17 @@ select {
   overflow: hidden;
 }
 
+.section-title {
+  font-size: 36px;
+  line-height: 1.1111111111;
+  color: rgb(46, 47, 66);
+  font-family: Roboto;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,4 +236,73 @@ select {
   font-weight: 500;
   letter-spacing: 0.64px;
   cursor: pointer;
+}
+
+.future-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.svg-container {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: rgb(244, 244, 253);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+}
+
+.future__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.future__title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgb(46, 47, 66);
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.future__descr {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(67, 68, 85);
+  font-family: Roboto;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.we-do__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

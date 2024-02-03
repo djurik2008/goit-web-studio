@@ -1,0 +1,9 @@
+.section-title {
+  @include font(36px, 40px);
+  color: rgb(46, 47, 66);
+  font-family: Roboto;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}

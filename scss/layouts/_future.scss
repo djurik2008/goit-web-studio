@@ -1,0 +1,40 @@
+.future-list {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-container {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: rgb(244, 244, 253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.future__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.future__title {
+  @include font(20px, 24px);
+  color: rgb(46, 47, 66);
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.future__descr {
+  @include font(16px, 24px);
+  color: rgb(67, 68, 85);
+  font-family: Roboto;
+  letter-spacing: 2%;
+  text-align: left;
+}
