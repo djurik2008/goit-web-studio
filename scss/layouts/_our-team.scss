@@ -1,0 +1,62 @@
+.team__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.team__item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  background: rgb(255, 255, 255);
+  padding-bottom: 32px;
+}
+
+.team-name {
+  @include font(20px, 24px);
+  color: rgb(46, 47, 66);
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  @include font(16px, 24px);
+  color: rgb(67, 68, 85);
+  font-family: Roboto;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(77, 90, 229);
+  transition: background-color linear 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(64, 75, 191);
+  }
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+  fill: rgb(244, 244, 253);
+}

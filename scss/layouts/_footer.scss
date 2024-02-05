@@ -1,0 +1,15 @@
+.page-footer {
+  padding: 100px 0px;
+  background-color: rgb(46, 47, 66);
+
+  .studio_color {
+    color: rgb(244, 244, 253);
+  }
+}
+
+.footer__descr {
+  @include font(16px, 24px);
+  color: rgb(244, 244, 253);
+  font-family: Roboto;
+  text-align: left;
+}

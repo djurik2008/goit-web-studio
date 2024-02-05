@@ -1,0 +1,28 @@
+.customers__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.customers__item {
+  padding: 16px 32px;
+  border: 1px solid rgb(142, 143, 153);
+  border-radius: 4px;
+  transition: border-color linear 200ms;
+
+  &:hover,
+  &:focus {
+    border-color: rgb(64, 75, 191);
+    .customers__icon {
+      fill: rgb(64, 75, 191);
+    }
+  }
+}
+
+.customers__icon {
+  width: 104px;
+  height: 56px;
+  fill: rgb(142, 143, 153);
+  transition: fill linear 200ms;
+}
