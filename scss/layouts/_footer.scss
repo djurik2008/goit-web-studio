@@ -1,9 +1,28 @@
 .page-footer {
-  padding: 100px 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: rgb(46, 47, 66);
 
   .studio_color {
     color: rgb(244, 244, 253);
+  }
+  .page-logo {
+    margin-bottom: 18px;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.page-footer-container {
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 80px;
   }
 }
 
@@ -12,4 +31,145 @@
   color: rgb(244, 244, 253);
   font-family: Roboto;
   text-align: left;
+}
+
+.footer__info {
+  @media screen and (max-width: 1158px) {
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 24px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    column-gap: 120px;
+  }
+}
+
+.footer-logo-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 72px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1158px) {
+    width: calc(100% / 2 - 70px);
+  }
+}
+
+.footer__social-media {
+  @media screen and (min-width: 768px) and (max-width: 1158px) {
+    width: calc(100% / 2 - 70px);
+  }
+}
+
+.social-media__title {
+  @include font(16px, 24px);
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  column-gap: 16px;
+
+  & .social-link:hover,
+  & .social-link:focus {
+    background-color: rgb(49, 208, 170);
+  }
+}
+
+.footer__form {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    column-gap: 24px;
+  }
+}
+
+.footer__form-title {
+  @include font(16px, 24px);
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.footer__form-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  background-color: inherit;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+
+  color: rgb(255, 255, 255);
+  @include font(12px, 24px);
+  font-family: Roboto;
+
+  &::placeholder {
+    color: rgb(255, 255, 255);
+    @include font(12px, 24px);
+    font-family: Roboto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 264px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: rgb(77, 90, 229);
+  border: none;
+
+  color: rgb(255, 255, 255);
+  @include font(16px, 24px);
+  font-family: Roboto;
+  font-weight: 500;
+
+  transition: background-color linear 200ms;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(49, 208, 170);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 20px;
+  fill: rgb(255, 255, 255);
 }

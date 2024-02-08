@@ -1,8 +1,16 @@
 .team__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+
+    @media screen and (min-width: 1158px) {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 .team__item {
@@ -12,6 +20,16 @@
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   background: rgb(255, 255, 255);
   padding-bottom: 32px;
+
+  & img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
 .team-name {
@@ -32,7 +50,7 @@
   margin-bottom: 8px;
 }
 
-.social-container {
+.social__list {
   display: flex;
   align-items: center;
   justify-content: center;
