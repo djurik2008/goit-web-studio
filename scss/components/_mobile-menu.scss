@@ -1,4 +1,4 @@
-.mobile-menu__button {
+.menu-open-btn {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -13,8 +13,67 @@
   }
 }
 
-.mobile-menu__button-icon {
+.open-icon {
   width: 30px;
   height: 30px;
   fill: rgb(46, 47, 66);
+}
+
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgb(46, 47, 66);
+  background-color: rgb(231, 233, 252);
+  opacity: 0.1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.close-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  position: fixed;
+  padding: 80px 40px 40px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu__phone {
+  @include font(36px, 40px);
+  color: rgb(77, 90, 229);
+  font-weight: 700;
+}
+
+.mobile-menu__mail {
+  @include font(20px, 24px);
+  color: rgb(67, 68, 85);
+  font-weight: 500;
 }

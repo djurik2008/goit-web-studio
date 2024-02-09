@@ -81,12 +81,16 @@
 .footer__social-list {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   column-gap: 16px;
 
   & .social-link:hover,
   & .social-link:focus {
     background-color: rgb(49, 208, 170);
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: left;
   }
 }
 

@@ -261,7 +261,7 @@ body {
   color: #404bbf;
 }
 
-.mobile-menu__button {
+.menu-open-btn {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -278,15 +278,92 @@ body {
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu__button {
+  .menu-open-btn {
     display: none;
   }
 }
 
-.mobile-menu__button-icon {
+.open-icon {
   width: 30px;
   height: 30px;
   fill: rgb(46, 47, 66);
+}
+
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgb(46, 47, 66);
+  background-color: rgb(231, 233, 252);
+  opacity: 0.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.close-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  position: fixed;
+  padding: 80px 40px 40px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.mobile-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu__phone {
+  font-size: 36px;
+  line-height: 1.1111111111;
+  color: rgb(77, 90, 229);
+  font-weight: 700;
+}
+
+.mobile-menu__mail {
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgb(67, 68, 85);
+  font-weight: 500;
 }
 
 .hero {
@@ -738,15 +815,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 16px;
      -moz-column-gap: 16px;
           column-gap: 16px;
 }
 .footer__social-list .social-link:hover, .footer__social-list .social-link:focus {
   background-color: rgb(49, 208, 170);
+}
+@media screen and (min-width: 768px) {
+  .footer__social-list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
